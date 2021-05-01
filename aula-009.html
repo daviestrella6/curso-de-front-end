@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AULA 9</title>
+
+    <style>
+        p {
+            color: red;
+        }
+        
+        p.exp-1 {
+            display: block;
+        }
+        
+        p.exp-2 {
+            display: inline;
+        }
+        
+        p.exp-3 {
+            display: inline-block;
+        }
+        
+        .aparecer:hover p.exp-4 {
+            display: block;
+        }
+        
+        p.exp-4 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="exp-1">
+        texto
+    </p>
+    <div>
+        Texto 2 abc
+        <p class="exp-2">
+            texto
+        </p>
+    </div>
+
+    <div>
+        Texto 3 abc
+        <p class="exp-3">
+            texto
+        </p>
+    </div>
+
+    <div class="aparecer">
+        aparecer
+        <p class="exp-4">
+            texto
+        </p>
+
+    </div>
+
+</body>
+
+</html>

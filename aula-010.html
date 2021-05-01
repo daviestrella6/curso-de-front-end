@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula-10</title>
+
+    <style>
+        .container {
+            background: violet;
+            color: #fff;
+            margin: 40px 0px;
+            position: relative;
+            height: 100px;
+            /* position: static 
+         => reseta todos os atributos do elemento e ele não aceita mais alterações
+         */
+        }
+        
+        .filho-relative {
+            background: turquoise;
+            position: relative;
+            top: 10px;
+            width: 100px;
+            left: 20px;
+            bottom: 50px;
+            right: 50px;
+        }
+        
+        .filho-absolute {
+            position: absolute;
+            background: red;
+            top: 70px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        texto 1
+
+        <div class="filho-relative">
+            texto 2
+
+        </div>
+        texto 3
+    </div>
+
+
+    <div class="container">
+        texto 1
+
+        <div class="filho-absolute">
+            texto 2
+
+        </div>
+        texto 3
+    </div>
+
+
+</body>
+
+</html>
